@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url("../fonts/AvenirNextCyr-Regular.eot");
+  src: url("../fonts/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Medium';
+  src: url("../fonts/AvenirNextCyr-Medium.eot");
+  src: url("../fonts/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?22990164");
+  src: url("../fonts/fontello.eot?22990164#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?22990164") format("woff2"), url("../fonts/fontello.woff?22990164") format("woff"), url("../fonts/fontello.ttf?22990164") format("truetype"), url("../fonts/fontello.svg?22990164#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?22990164#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-facebook:before {
+  content: '\f09a';
+}
+
+/* '' */
+.icon-instagram:before {
+  content: '\f16d';
+}
+
+/* '' */
+.icon-vkontakte:before {
+  content: '\f189';
+}
+
+/* '' */
+body {
+  font-size: 22px;
+  font-family: 'Avenir Next Cyr Regular';
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  text-transform: uppercase;
+  text-shadow: 0 2px 21px rgba(239, 255, 252, 0.46);
+  background-color: #23dcb8;
+  background-image: linear-gradient(-241deg, #48d7bb 0%, #0eb595 100%);
+  padding: 30px 58px;
+  border: none;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-box-shadow: 0 12px 43px rgba(35, 220, 184, 0.31);
+          box-shadow: 0 12px 43px rgba(35, 220, 184, 0.31);
+  display: block;
+}
+
+.header {
+  background: #192430 url("../img/header-bg.png") no-repeat bottom/cover;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  min-height: 100vh;
+}
+
+.header-title {
+  max-width: 640px;
+  text-transform: uppercase;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.header-subtitle {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  margin-bottom: 230px;
+}
+
+.navbar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-logo__name {
+  margin-right: 40px;
+  font-style: 26px;
+}
+
+.navbar-logo__description {
+  font-size: 16px;
+  padding-left: 40px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar-phone {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 50px;
+}
+
+.navbar-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar-social__item {
+  padding: 0;
+  margin-right: 18px;
+}
+
+.navbar-social__item:last-child {
+  margin-right: 0px;
+}
+
+.navbar-social__link {
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
